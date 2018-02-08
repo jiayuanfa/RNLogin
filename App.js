@@ -14,7 +14,7 @@ import {
   TextInput,
 } from 'react-native';
 
-// 引入这个类库 
+// 引入这个类库 修改app.js
 var Dimensions = require('Dimensions');
 
 export default class App extends Component<{}> {
