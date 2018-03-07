@@ -17,14 +17,14 @@ import {
 // 引入这个类库 修改app.js
 var Dimensions = require('Dimensions');
 
+// 引入外部的登录的View
+var LoginView = require('./loginView');
+
+// 返回登录界面即可 以后的项目就是因为Main的界面即可
 export default class App extends Component<{}> {
   render() {
     return (
-      <View style={styles.container} >
-        <Text>当前屏幕宽度：{Dimensions.get('window').width}</Text>
-        <Text>当前屏幕高度：{Dimensions.get('window').height}</Text>
-        <Text>当前屏幕的分辨率：{Dimensions.get('window').scale}</Text>
-      </View> 
+      <LoginView/>
     );
   }
 }
